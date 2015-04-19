@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"><head>
+<meta charset="utf-8" />
+<meta name="description" content="パズル＆ドラゴンズ（パズドラ）の公式運営サイト。「パズドラ」はモンスターを育ててパズルでバトルする新感覚パズルRPG！イベントやコラボ、モンスターに関する最新情報をお届け！ " />
+<meta name="keywords" content="パズドラ,パズル,RPG,パズル＆ドラゴンズ,パズルRPG,ドラゴン" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<title>パズドラ　運営サイト ｜ パズル＆ドラゴンズ</title>
+<meta property="og:image" content="http://www.gungho.jp/pad/images/fb_icon.png" />
+<link rel="apple-touch-icon" href="../library/img/touch_icon_pad.png" />
+<link rel="stylesheet" type="text/css" href="../library/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../library/css/style2.css" />
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="expires" content="180" />
+<script src="../library/js/jquery.js"></script>
+<script type="text/javascript">
+    if (navigator.userAgent.indexOf('iPhone')>0 ||
+        navigator.userAgent.indexOf('iPod')>0 ||
+		navigator.userAgent.indexOf('Silk')>0 ||
+		navigator.userAgent.indexOf('Kindle')>0 ||
+        navigator.userAgent.indexOf('Android')>0) {
+        document.write('<link rel="stylesheet" type="text/css" href="../library/css/renewstyle.css?var=001">');
+    }else {
+        document.write('<link rel="stylesheet" type="text/css" href="../library/css/renewstyle_pc_index.css?var=001">');
+    }
+</script>
+</head>
+<noscript>
+<link rel="stylesheet" type="text/css" href="../library/css/renewstyle.css" />
+</noscript>
+<script type="text/javascript">
+//google-analytics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22393358-21']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+            $(function(){
+				    if (navigator.userAgent.indexOf('iPhone')>0 ||
+			navigator.userAgent.indexOf('iPod')>0 ||
+			navigator.userAgent.indexOf('Silk')>0 ||
+			navigator.userAgent.indexOf('Kindle')>0 ||
+			navigator.userAgent.indexOf('Android')>0) {
+				$("ul.mntList li").eq(10).remove()
+				$("ul.mntList li").eq(9).remove()
+				$("ul.mntList li").eq(8).remove()
+				$("ul.mntList li").eq(7).remove()
+				$("ul.mntList li").eq(6).remove()
+				$("ul.mntList li").eq(5).remove()
+				$("ul.mntList li").eq(4).remove()
+				$("ul.mntList li").eq(3).remove()
+			}else{
+				$("ul.mntList li").eq(10).remove()
+				$("ul.mntList li").eq(9).remove()
+				$("ul.mntList li").eq(8).remove()
+				$("ul.mntList li").eq(7).remove()
+				$("ul.mntList li").eq(6).remove()
+				$("ul.mntList li").eq(5).remove()
+				$("ul.mntList li").eq(4).remove()
+
+			}
+		});
+</script>
+</head>
+<body>
+<noscript>
+<div id="noscript">
+<span style="font-size:130%;">本サイトのご利用にあたって</span><br />
+現在JavaScriptが「無効」に設定されているため、コンテンツが正しく表示できない可能性があります。<br />
+全ての機能をご利用いただくには、ブラウザのJavaScript設定を「有効」に変更してください。
+</div>
+</noscript>
+
+
+<div id="wrap">
+<div id="main" class="clearfix">
+<h1 id="top">パズル＆ドラゴンズ（パズドラ）運営サイト</h1>
+<div id="wrapper">
+<div id="left">
+<div id="illust">パズル＆ドラゴンズ（パズドラ）</div>
+<div id="news_back">
+<div id="news_in">
+<div class="txt">
+<!-- [maintenance] -->
+
+
+<ul class="mntList">
+
+<li>
+<span class="yellowsmall">2014/12/22&nbsp;15:00&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002l2w.html">【12月22日】メンテナンス延長に関するお詫び</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/22&nbsp;13:34&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002kbc.html">≪更新≫【12月22日】メンテナンス終了のお知らせ</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/18&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002kq7.html">【Vジャンプ2月号】特典アイテムコード有効期間に関するお知らせ</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/16&nbsp;19:55&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002kgc.html">「クリスマスガチャ」における「聖夜の神精霊・ジーニャ」誤表示問題への対応について</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/16&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002k7n.html">≪更新≫「聖夜の神精霊・ジーニャ」運営サイト誤表示に関するお詫び</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/15&nbsp;16:00&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002jy7.html">≪更新≫運営ｻｲﾄの紹介画面「聖夜の神精霊・ｼﾞｰﾆｬ」の誤りに関して</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/15&nbsp;15:45&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002k1i.html">一部スキルのバランス調整のお知らせ</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/12&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k0000002jgg.html">【お問い合わせ窓口】12月16日メンテナンスのお知らせ</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/10&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k00000024b2.html">≪更新≫【Android】4.0未満の端末からお楽しみの方へ</a>
+
+</li>
+
+<li>
+<span class="yellowsmall">2014/12/10&nbsp;【パズル＆ドラゴンズ】<br></span>
+
+<a href="/maintenance/pad/pua59k000000286b.html">≪更新≫【iOS】6.0未満の端末からお楽しみの方へ</a>
+
+</li>
+
+</ul>
+<!-- /[maintenance] -->
+</div>
+</div><!--/news_back-->
+</div><!--/news_in-->
+</div><!--/left-->
+
+
+
+<div id="right">
+<h2 id="top_head">パズドラ　最新情報</h2>
+<div id="banner_block_dodai">
+<h3 class="notice"><img src="../library/img/details/pad/notice/notice_h.png" width="55px" alt="重要" /></h3>
+	<ul id="jyuyo" style="text-align:center;">
+		<li><a href="http://mobile.gungho.jp/news/pad/130215_id.html"><img src="../library/img/details/pad/notice/notice_code.jpg" alt="【ご確認ください】秘密のコードについて" /></a></li>
+		<li><a href="http://mobile.gungho.jp/news/pad/announce.html"><img src="../library/img/details/pad/notice/notice_gameplay.jpg" alt="ゲームをプレイする際の禁止事項" /></a></li>
+		<li><a href="../news/pad/130212_notice.html"><img src="../library/img/details/pad/notice/notice_magicstone.jpg" alt="【未成年の方へ】魔法石を購入する時のご注意" /></a></li>
+	</ul>
+<!--    <div class="jyuyo2">
+    <a href="http://mobile.gungho.jp/maintenance/pad/pua59k00000024re.html" target="_blank"><img src="../library/img/details/pad/notice/notice_iphone6.gif" alt="iPhone6機種変更時などの データ引き継ぎ方法について"/></a>
+    </div>-->
+    <div id="jyuyo_os">
+    <img src="../library/img/details/pad/notice/notice_os_change1.gif" alt="対応OS変更について"/><a href="http://mobile.gungho.jp/maintenance/pad/pua59k000000286b.html"><img src="../library/img/details/pad/notice/notice_os_change2.gif" alt="iOSの場合"/></a><a href="http://mobile.gungho.jp/maintenance/pad/pua59k00000024b2.html"><img src="../library/img/details/pad/notice/notice_os_change3.gif" alt="Androidの場合"/></a>
+    </div>
+
+<!------------------------------------>
+<h2 id="top_pickup">ピックアップ！</h2>
+<div class="pickup">
+    <dl>
+        <dt><a href="../news/pad/dragonball3.html"><img src="../news/pad/img/collabo/141222_dragonball3/no1/banner.jpg" /></a></dt>
+        <dd class="categoryEvent">コラボ</dd><dd class="cartegoryDate">12/29(月)0:00～2015/01/11(日)23:59</dd>
+    </dl>
+
+    <dl>
+        <dt><a href="../news/pad/update7_5.html"><img src="../news/pad/updateinfo/Ver7_5/top.jpg" /></a></dt>
+        <dd class="categorySinka">ｱｯﾌﾟﾃﾞｰﾄ</dd><dd class="cartegoryDate">12/22(月)にVer.7.5へアップデート!</dd>
+    </dl>
+
+    <dl>
+        <dt><a href="../news/pad/141218_powerup.html"><img src="../news/pad/img/sinka/141218_powerup/top.jpg" /></a></dt>
+        <dd class="categorySinka">調整</dd><dd class="cartegoryDate">12/22 (月)メンテナンス後～</dd>
+    </dl>
+
+	<dl>
+		<dt><a href="../news/pad/141218_skill.html"><img src="../news/pad/img/sinka/141119_skill/top.jpg" /></a></dt>
+		<dd class="categorySinka">ｽｷﾙ変更</dd><dd class="cartegoryDate">12/22 (月)メンテナンス後～</dd>
+	</dl>
+</div>
+
+<!----------------------------------->
+
+<h2 id="top_event">イベント関連</h2>
+
+	 <dl>
+        <dt><a href="../news/pad/xmas2014_gacha.html"><img src="../news/pad/img/xmas2014_gacha/top.jpg" /></a></dt>
+        <dd>12/15(月)00:00～12/25(木)23:59</dd>
+        <dd><a href="../news/pad/xmas2014_gacha_list.html"><span style="color:#00d8ff;">→クリスマスガチャで出現するモンスター一覧</span></a></dd>
+    </dl>
+
+	<dl>
+		<dt><a href="../news/pad/xmas2014.html"><img src="../news/pad/img/xmas2014/top.jpg" /></a></dt>
+        <dd>12/12(金)12:00～12/25(木)23:59</dd>
+	</dl>
+
+	<dl>
+        <dt><a href="../news/pad/141218.html"><img src="../news/pad/img/carnival/141218.jpg" /></a></dt>
+        <dd>12/19(金) 12:00～12/26(金) 11:59</dd>
+        <dd><a href="../news/pad/gacya_list_141218tree.html"><span style="color:#00d8ff;">→レアガチャで出現するモンスター一覧</span></a></dd>
+    </dl>
+
+	<dl>
+		<dt><a href="../news/pad/141205_live_clear.html"><img src="../news/pad/img/live/141205_clear/top.jpg" /></a></dt>
+	</dl>
+
+	<dl>
+		<dt><a href="../news/pad/141212_add_coin_dungeon.html"><img src="../news/pad/img/add_coin_dungeon.jpg" /></a></dt>
+        <dd>12/16(火)00:00～12/31(水)23:59</dd>
+	</dl>
+	<dl>
+		<dt><a href="../news/pad/141010_puzchalle.html"><img src="../news/pad/img/141010_puzchalle/top.jpg" /></a></dt>
+        <dd>10/10(金)～</dd>
+	</dl>
+
+<!--↓新モンスターイラストコンテスト↓-->
+<!--<li>
+<a href="../news/pad/141010_contest_result.html"><img src="../news/pad/img/141010_contest_result/top.jpg" /></a><br/>
+各賞が決定しました!
+</li>-->
+
+<!---------------------------------->
+
+<h2 id="top_collabo">コラボ関連</h2>
+	<dl>
+		<dt><a href="../news/pad/hokuto.html"><img src="../news/pad/img/collabo/141125_hokuto/no1/banner.jpg" /></a></dt>
+        <dd><span class="no_br">実施決定!!乞うご期待!!</span></dd>
+	</dl>
+
+<!------------------------------------>
+
+<!--<h2 id="top_powerup">究極進化・パワーアップ関連</h2>-->
+
+<!------------------------------------>
+<!--<h2 id="top_update">アップデート関連</h2>-->
+
+
+<!---------------
+<h2 id="top_kourin">降臨・生放送関連</h2>
+--------------------->
+
+
+<h2 id="top_other">その他</h2>
+	<ul id="banner_block">
+     		<li><a href="http://www.padz-tb.jp/news/pad_am_fes/" target="_blank" onclick="_gaq.push(['_trackEvent', 'PAD', 'AＭ感謝祭']);"><img src="../news/pad/img/am_fes.jpg" /></a></li>
+
+    		<li><a href="http://www.pazudoraya.com/article/?p=1563" target="_blank" onclick="_gaq.push(['_trackEvent', 'PAD', 'パズドラ屋クリスマスキャンペーン']);"><img src="../news/pad/img/141127_pazudoraya.jpg" /></a></li>
+
+    		<li id="padw"><a href="../news/padw/index.html" target="_blank"><img src="../news/pad/img/padw_unei.jpg" /></a><!--2箇所アリ注意--></li>
+
+    		<li><a href="../news/pad/htb.html"><img src="../news/pad/img/htb_banner.png" /></a></li>
+
+    		<li><a href="http://www.padbt.net/" target="_blank" onclick="_gaq.push(['_trackEvent', 'PAD', 'パズバト']);"><img src="../news/pad/img/collabo/141120_padbt/unei_banner.jpg" /></a></li>
+
+    		<li id="spd"><a href="../news/pad/dungeon.html"><img src="../news/pad/dungeon.jpg" /></a><br />12/12(金)「丼龍」シリーズの情報を追加!<!--2箇所アリ注意--></li>
+
+    		<li id="paz"><a href="http://pad-3ds.gungho.jp/" target="_blank" onclick="_gaq.push(['_trackEvent', 'PAD', 'パズドラZ']);"><img src="../news/pad/img/paz.jpg" /></a></li>
+
+    		<li><a href="../news/pad/soundtrack2013.html"><img src="../news/pad/img/soundtrack2013_top.jpg" /></a></li>
+
+    		<li><a href="http://pd.appbank.net/guide/niconico" target="_blank"><img src="../news/pad/img/niconama_banner.jpg" /></a></li>
+		</ul>
+
+
+<!--その他トピック-->
+<ul style="list-style:none;">
+<li>
+	<div style="background-color:#262626; padding:7px 0px 3px 0px; width:100%;" >
+	<ul id="osiraseBottom">
+    		<li><a href="../news/pad/141210_anke_result.html"><span style="color:#ffffff;">・｢アンケートダンジョン12｣登場モンスター決定!!</span></a></li>
+    		<li><a href="../news/pad/141010_contest_result.html"><span style="color:#ffffff;">・新モンスターイラストコンテスト　結果発表！</span></a></li>
+            <li><a href="http://pad-tcg.com/" target="_blank" onclick="_gaq.push(['_trackEvent', 'PAD', 'TCG']);"><span style="color:#ffffff;">・パズドラがトレーディングカードゲームで登場！</span></a></li>
+			<li><a href="../news/pad/130830_kakusei.html"><span style="color:#ffffff;">・「能力覚醒システム」について</span></a></li>
+			<li><a href="../news/pad/130913_comic.html"><span style="color:#ffffff;">・たまドラの4コママンガはこちら！</span></a></li>
+			<li><a href="../news/pad/130314_and.html"><span style="color:#ffffff;">・【Android】ﾌﾟﾚｲﾃﾞｰﾀの移行やﾊﾞｯｸｱｯﾌﾟの方法</span></a></li>
+			<li><a href="../news/pad/transfer.html"><span style="color:#ffffff;">・【iOS】ﾌﾟﾚｲﾃﾞｰﾀの移行やﾊﾞｯｸｱｯﾌﾟの方法</span></a></li>
+			<li><a href="../news/pad/120918_2.html"><span style="color:#ffffff;">・【Android】ゲームが起動しないお客様へ</span></a></li>
+			<li><a href="../news/pad/and_install.html"><span style="color:#ffffff;">・【Android/Kindle】データインストールについて</span></a></li>
+			<li><a href="../news/pad/140131_storage.html"><span style="color:#ffffff;">・【Android】端末に空き容量が無い場合</span></a></li>
+			<li><a href="../news/pad/131003_henko.html"><span style="color:#ffffff;">・異なるOS間のゲームデータ引き継ぎについて</span></a></li>
+		</ul>
+	</div>
+</li>
+<!--/その他トピック-->
+
+<li>
+<center>
+<br />
+<span style="font-weight:bold; font-size:110%; color:#00CC33;">[ パズドラのダウンロードはこちら！]</span><br />
+<a href="https://itunes.apple.com/jp/app/pazuru-doragonzu/id493470467?mt=8&uo=4&at=10l3II" target="_blank" onclick="_gaq.push(['_trackEvent', 'PAD_unei_top', 'AppStore']);"><img src="../library/img/details/button_iPhone.png" style="margin-top:5px; height:45px; width:158px;" alt="iOS版をダウンロードする" /></a>
+<a href="https://play.google.com/store/apps/details?id=jp.gungho.pad" onclick="_gaq.push(['_trackEvent', 'PAD_unei_top', 'Google Play']);"><img src="../library/img/details/button_Android.png"  alt="Android版をダウンロードする" style="margin-top:5px; height:45px; width:130px;" /></a>
+<a href="http://www.amazon.co.jp/gp/product/B00ANI9PIW/ref=mas_pm_puzzdra" onclick="_gaq.push(['_trackEvent', 'PAD_unei_top', 'Kindle']);"><img src="../library/img/details/btn_kindle.png" alt="Kindle版をダウンロードする" style="margin-top:3px; height:45px; width:130px;"/></a>
+</center>
+</li>
+</ul><!--/banner_block-->
+
+
+
+
+</div><!--banner_block_dodai-->
+</div>
+<div class="clear">clear</div>
+
+<div id="goto_koshiki"><a href="http://www.gungho.jp/pad/">公式サイトへ</a></div>
+<div id="paz_pc"><a href="http://pad-3ds.gungho.jp/">パズドラZ公式サイトへ</a></div>
+<div id="paz_pc_moji"></div>
+<div id="spd_pc"><a href="../news/pad/dungeon.html">スペシャルダンジョン情報</a></div>
+<div id="spd_pc_moji"><span style="color:#fff; font-weight:bold;">12/12(金)「丼龍」シリーズの情報を追加!</span></div>
+<div id="padw_pc"><a href="../news/padw/index.html" target="_blank">パズドラＷ運営サイトへ</a></div>
+<!--<div id="padw_pc_moji"></div>-->
+</div><!--/wrapper-->
+</div><!--/main-->
+</div><!--/wrap-->
+
+
+<div id="bottom_menu_back"><ul id="bottom_menu"><li id="menu1"><a href="https://twitter.com/pad_sexy" target="_blank">公式Twitter</a></li><li id="menu2"><a href="http://mobile.gungho.jp/news/pad/help/" target="_blank">FAQ</a></li><li id="menu3"><a href="../news/pad/unei/kabegami.html">壁紙など</a></li><li id="menu4"><a href="../news/pad/unei/goto_padya.html">関連グッズ</a></li><li id="menu5"><a href="../news/pad/unei/guide.html">攻略ガイド</a></li><li id="menu7"><a href="toi.html">お問い合わせ</a></li></ul><!--/bottom_menu--></div><!--bottom_menu_back-->
+
+<script type="text/javascript">
+    if (navigator.userAgent.indexOf('iPhone')>0 ||
+        navigator.userAgent.indexOf('iPod')>0 ||
+		navigator.userAgent.indexOf('Silk')>0 ||
+		navigator.userAgent.indexOf('Kindle')>0 ||
+        navigator.userAgent.indexOf('Android')>0){
+        document.write('<div id="footer"><p><img src="../library/img/footer_logo.gif" alt="" width="21" height="21" />&copy; GungHo Online Entertainment, Inc. All Rights Reserved.</p></div><!--/footer--><div id="bottom_menu_back"><ul id="bottom_menu"><li id="menu1"><a href="https://twitter.com/pad_sexy" target="_blank">公式Twitter</a></li><li id="menu5"><a href="../news/pad/unei/guide.html">攻略ガイド</a></li><li id="menu3"><a href="../news/pad/unei/kabegami.html">壁紙など</a></li><li id="menu4"><a href="../news/pad/unei/goto_padya.html">関連グッズ</a></li><li id="menu2"><a href="http://mobile.gungho.jp/news/pad/help/" target="_blank">FAQ</a></li><li id="menu7"><a href="toi.html">お問い合わせ</a></li></ul><!--/bottom_menu--></div><!--bottom_menu_back-->');
+    }else {
+        document.write('<div id="footer_block"><div id="bottom_menu_back"><ul id="bottom_menu"><li id="menu1"><a href="https://twitter.com/pad_sexy" target="_blank">公式Twitter</a></li><li id="menu5"><a href="../news/pad/unei/guide.html">攻略ガイド</a></li><li id="menu3"><a href="../news/pad/unei/kabegami.html">壁紙など</a></li><li id="menu4"><a href="../news/pad/unei/goto_padya.html">関連グッズ</a></li><li id="menu2"><a href="http://mobile.gungho.jp/news/pad/help/" target="_blank">FAQ</a></li><li id="menu7"><a href="toi.html">お問い合わせ</a></li></ul><!--/bottom_menu--></div><!--bottom_menu_back--><div id="footer"><p><img src="../library/img/footer_logo.gif" alt="" width="21" height="21" />&copy; GungHo Online Entertainment, Inc. All Rights Reserved.</p></div><!--/footer--></div><!--/footer_block-->');
+    }
+</script>
+<noscript>
+<div id="footer">
+<p><img src="../library/img/footer_logo.gif" alt="" width="21" height="21" />&copy; GungHo Online Entertainment, Inc. All Rights Reserved.</p>
+</div><!--/footer-->
+<div id="bottom_menu_back"><ul id="bottom_menu_noscript"><li id="menu1"><a href="https://twitter.com/pad_sexy" target="_blank">公式Twitter</a></li><li id="menu5"><a href="../news/pad/unei/guide.html">攻略ガイド</a></li><li id="menu3"><a href="../news/pad/unei/kabegami.html">壁紙など</a></li><li id="menu4"><a href="../news/pad/unei/goto_padya.html">関連グッズ</a></li><li id="menu2"><a href="http://mobile.gungho.jp/news/pad/help/" target="_blank">FAQ</a></li><li id="menu7"><a href="toi.html">お問い合わせ</a></li></ul><!--/bottom_menu--></div><!--bottom_menu_back-->
+</noscript>
+</body>
+</html>
