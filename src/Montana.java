@@ -30,37 +30,37 @@ public class Montana {
 		String y3;
 
 		try{
-		       File file = new File("data/"+ "base" +".txt");
-		       BufferedReader cr = new BufferedReader(new FileReader(file));
+			File file = new File("data/"+ "base" +".txt");
+			BufferedReader cr = new BufferedReader(new FileReader(file));
 
-		       String str= null;
-		       int i=0;
-		       while((str = cr.readLine()) != null){
-		           y2[i] = str;
-		           i = i +1;
-		       }
-		       cr.close();
+			String str= null;
+			int i=0;
+			while((str = cr.readLine()) != null){
+				y2[i] = str;
+				i = i +1;
+			}
+			cr.close();
 
 		}catch(FileNotFoundException e){
-		        System.out.println(e);
+			System.out.println(e);
 		}catch(IOException e){
-		        System.out.println(e);
+			System.out.println(e);
 		}//ok
 
 		try{//ok
-		       File file = new File("C:/Users/Yune/exry/tesbot/data/recent.txt");
-		       BufferedReader dr = new BufferedReader(new FileReader(file));
+			File file = new File("C:/Users/Yune/exry/tesbot/data/recent.txt");
+			BufferedReader dr = new BufferedReader(new FileReader(file));
 
-		       String zabo= null;
-		       jk=0;
-		       zabo = dr.readLine();
-		           jk = Integer.parseInt(zabo);
-	        		y3 = y2[jk];
+			String zabo= null;
+			jk=0;
+			zabo = dr.readLine();
+			jk = Integer.parseInt(zabo);
+			y3 = y2[jk];
 
-		       dr.close();
+			dr.close();
 
-		       try{//ok
-		    	   twitter.updateStatus(new StatusUpdate("@"+u+" "+y3).inReplyToStatusId(id));
+			try{//ok
+				twitter.updateStatus(new StatusUpdate("@"+u+" "+y3).inReplyToStatusId(id));
 				System.out.println("元ネタツイートしたよ");
 				td = 1;
 			} catch(TwitterException e){
@@ -68,10 +68,10 @@ public class Montana {
 			}//ok
 
 		}catch(FileNotFoundException e){
-		        System.out.println(e);
-		  }catch(IOException e){
-		        System.out.println(e);
-		  }
+			System.out.println(e);
+		}catch(IOException e){
+			System.out.println(e);
+		}
 
 
 	}

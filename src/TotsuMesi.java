@@ -25,7 +25,7 @@ public class TotsuMesi {
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
-		int i=0;//このiはここにないとダメ
+		int i=0;
 		String Dedede[] = new String[1000];
 
 		Random lun = new Random();
@@ -33,28 +33,28 @@ public class TotsuMesi {
 		Random lun3 = new Random();
 
 
-			try{
-			       File file = new File("data/" + "food" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+		try{
+			File file = new File("data/" + "food" + ".txt");
+			BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       String str= null;
-			       i=0;
-			       while((str = br.readLine()) != null){
-			           Dedede[i] = str;
-			           i = i +1;
-			       }
+			String str= null;
+			i=0;
+			while((str = br.readLine()) != null){
+				Dedede[i] = str;
+				i = i +1;
+			}
 
-			       br.close();
+			br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+		}catch(FileNotFoundException e){
+			System.out.println(e);
+		}catch(IOException e){
+			System.out.println(e);
+		}
 
-			int eclip = lun.nextInt(i);
-			int eclip2 = lun2.nextInt(i);
-			int eclip3 = lun3.nextInt(i);
+		int eclip = lun.nextInt(i);
+		int eclip2 = lun2.nextInt(i);
+		int eclip3 = lun3.nextInt(i);
 
 
 		try{
@@ -64,12 +64,6 @@ public class TotsuMesi {
 		} catch(TwitterException e){
 			System.err.println("ツイート失敗"+e.getMessage());
 		}
-
-
-
-
-
-
 
 
 

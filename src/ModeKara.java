@@ -30,7 +30,7 @@ public class ModeKara {
 		Random rnd = new Random();
 		int nnn = rnd.nextInt(5);
 
-   		Twitter twitter = new TwitterFactory().getInstance();
+		Twitter twitter = new TwitterFactory().getInstance();
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
@@ -45,19 +45,19 @@ public class ModeKara {
 			System.out.println("文章が「から」条件通過");
 
 			try{
-			       File file = new File("data/" + "Mercury" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+				File file = new File("data/" + "Mercury" + ".txt");
+				BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       Mae2 = br.readLine();
-			       Usiro2 = br.readLine();
+				Mae2 = br.readLine();
+				Usiro2 = br.readLine();
 
-			       br.close();
+				br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+			}catch(FileNotFoundException e){
+				System.out.println(e);
+			}catch(IOException e){
+				System.out.println(e);
+			}
 
 			System.out.println(Mae2 + " : " +Usiro2);
 
@@ -87,22 +87,22 @@ public class ModeKara {
 			System.out.println(Mae2 + " : " +Usiro2);
 
 			try{
-			      File file = new File("data/" + "Mercury" + ".txt");
+				File file = new File("data/" + "Mercury" + ".txt");
 
-			      if (checkBeforeWritefile(file)){
-			        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+				if (checkBeforeWritefile(file)){
+					PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 					pw.println(Mae2);
 					pw.println(Usiro2);
 
-	        pw.close();
-			      }else{
-			        System.out.println("ファイルに書き込めません");
-			      }
-			    }catch(IOException e){
-			      System.out.println(e);
-			    }
+					pw.close();
+				}else{
+					System.out.println("ファイルに書き込めません");
+				}
+			}catch(IOException e){
+				System.out.println(e);
+			}
 
 			if(!(Mae2.equals("未入力")||Usiro2.equals("未入力"))){
 
@@ -110,28 +110,28 @@ public class ModeKara {
 
 					String fy2 = Mae2 + "から" + Usiro2;
 
-						twitter.updateStatus(fy2);
+					twitter.updateStatus(fy2);
 
 					System.out.println("ツイートしたよ："+fy2);
 					td = 1;
 
 					try{
-					      File file = new File("data/" + "Mercury" + ".txt");
+						File file = new File("data/" + "Mercury" + ".txt");
 
-					      if (checkBeforeWritefile(file)){
-					        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+						if (checkBeforeWritefile(file)){
+							PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 							pw.println("未入力");
 							pw.println("未入力");
 
-			        pw.close();
-					      }else{
-					        System.out.println("ファイルに書き込めません");
-					      }
-					    }catch(IOException e){
-					      System.out.println(e);
-					    }
+							pw.close();
+						}else{
+							System.out.println("ファイルに書き込めません");
+						}
+					}catch(IOException e){
+						System.out.println(e);
+					}
 
 
 
@@ -147,19 +147,19 @@ public class ModeKara {
 
 
 
-}
+	}
 
 
 
-	  private static boolean checkBeforeWritefile(File file){
-		    if (file.exists()){
-		      if (file.isFile() && file.canWrite()){
-		        return true;
-		      }
-		    }
+	private static boolean checkBeforeWritefile(File file){
+		if (file.exists()){
+			if (file.isFile() && file.canWrite()){
+				return true;
+			}
+		}
 
-		    return false;
-		  }
+		return false;
+	}
 
 
 

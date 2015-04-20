@@ -38,53 +38,53 @@ public class PointRep {
 
 
 		try{
-		       File file = new File("data/" + "prgive" + ".txt");
-		       BufferedReader br = new BufferedReader(new FileReader(file));
+			File file = new File("data/" + "prgive" + ".txt");
+			BufferedReader br = new BufferedReader(new FileReader(file));
 
-		       String str= null;
-		       i=0;
-		       while((str = br.readLine()) != null){
-		           Dedede[i] = str;
-		           if(y35.equals(Dedede[i])){
-		        	   judge=i;
-		        	   break;
-		           }
-		           i = i +1;
-		       }
+			String str= null;
+			i=0;
+			while((str = br.readLine()) != null){
+				Dedede[i] = str;
+				if(y35.equals(Dedede[i])){
+					judge=i;
+					break;
+				}
+				i = i +1;
+			}
 
-		       br.close();
+			br.close();
 
-		  }catch(FileNotFoundException e){
-		        System.out.println(e);
-		  }catch(IOException e){
-		        System.out.println(e);
-		  }
+		}catch(FileNotFoundException e){
+			System.out.println(e);
+		}catch(IOException e){
+			System.out.println(e);
+		}
 		if (judge == -1){
 			return;
 		}
 
 		try{
-		       File file = new File("data/" + "prtake" + ".txt");
-		       BufferedReader fr = new BufferedReader(new FileReader(file));
+			File file = new File("data/" + "prtake" + ".txt");
+			BufferedReader fr = new BufferedReader(new FileReader(file));
 
-		       String str= null;
-		       j=0;
-		       while((str = fr.readLine()) != null){
-		           Dedede[j] = str;
-		           if(j==judge){
-		        	   message = Dedede[j];
-		        	   break;
-		           }
-		           j = j +1;
-		       }
+			String str= null;
+			j=0;
+			while((str = fr.readLine()) != null){
+				Dedede[j] = str;
+				if(j==judge){
+					message = Dedede[j];
+					break;
+				}
+				j = j +1;
+			}
 
-		       fr.close();
+			fr.close();
 
-		  }catch(FileNotFoundException e){
-		        System.out.println(e);
-		  }catch(IOException e){
-		        System.out.println(e);
-		  }
+		}catch(FileNotFoundException e){
+			System.out.println(e);
+		}catch(IOException e){
+			System.out.println(e);
+		}
 
 
 		try{

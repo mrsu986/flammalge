@@ -38,7 +38,7 @@ public class ModeHaCo {
 
 		int jissai = rnd.nextInt(192);
 
-   		Twitter twitter = new TwitterFactory().getInstance();
+		Twitter twitter = new TwitterFactory().getInstance();
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
@@ -53,19 +53,19 @@ public class ModeHaCo {
 			System.out.println("文章が「は」条件通過");
 
 			try{
-			       File file = new File("data/" + "Mars" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+				File file = new File("data/" + "Mars" + ".txt");
+				BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       Mae = br.readLine();
-			       Usiro = br.readLine();
+				Mae = br.readLine();
+				Usiro = br.readLine();
 
-			       br.close();
+				br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+			}catch(FileNotFoundException e){
+				System.out.println(e);
+			}catch(IOException e){
+				System.out.println(e);
+			}
 
 			System.out.println(Mae + " : " +Usiro);
 
@@ -82,20 +82,20 @@ public class ModeHaCo {
 				}
 
 				try{
-				      File file = new File("data/" + "Haco1" + ".txt");
+					File file = new File("data/" + "Haco1" + ".txt");
 
-				      if (checkBeforeWritefile(file)){
-				        FileWriter filewriter = new FileWriter(file, true);
+					if (checkBeforeWritefile(file)){
+						FileWriter filewriter = new FileWriter(file, true);
 
-				        filewriter.write(Mae);
-				        filewriter.write("\r\n");
-				        filewriter.close();
-				      }else{
-				        System.out.println("ファイルに書き込めません");
-				      }
-				    }catch(IOException e){
-				      System.out.println(e);
-				    }
+						filewriter.write(Mae);
+						filewriter.write("\r\n");
+						filewriter.close();
+					}else{
+						System.out.println("ファイルに書き込めません");
+					}
+				}catch(IOException e){
+					System.out.println(e);
+				}
 
 
 			}
@@ -111,20 +111,20 @@ public class ModeHaCo {
 				}
 
 				try{
-				      File file = new File("data/" + "Haco2" + ".txt");
+					File file = new File("data/" + "Haco2" + ".txt");
 
-				      if (checkBeforeWritefile(file)){
-				        FileWriter filewriter = new FileWriter(file, true);
+					if (checkBeforeWritefile(file)){
+						FileWriter filewriter = new FileWriter(file, true);
 
-				        filewriter.write(Usiro);
-				        filewriter.write("\r\n");
-				        filewriter.close();
-				      }else{
-				        System.out.println("ファイルに書き込めません");
-				      }
-				    }catch(IOException e){
-				      System.out.println(e);
-				    }
+						filewriter.write(Usiro);
+						filewriter.write("\r\n");
+						filewriter.close();
+					}else{
+						System.out.println("ファイルに書き込めません");
+					}
+				}catch(IOException e){
+					System.out.println(e);
+				}
 
 
 			}
@@ -133,76 +133,76 @@ public class ModeHaCo {
 
 
 			try{
-			      File file = new File("data/" + "Mars" + ".txt");
+				File file = new File("data/" + "Mars" + ".txt");
 
-			      if (checkBeforeWritefile(file)){
-			        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+				if (checkBeforeWritefile(file)){
+					PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 					pw.println(Mae);
 					pw.println(Usiro);
 
-	        pw.close();
-			      }else{
-			        System.out.println("ファイルに書き込めません");
-			      }
-			    }catch(IOException e){
-			      System.out.println(e);
-			    }
+					pw.close();
+				}else{
+					System.out.println("ファイルに書き込めません");
+				}
+			}catch(IOException e){
+				System.out.println(e);
+			}
 
 			if(Mae.equals("未入力")&&!(Usiro.equals("未入力")) && jissai < 35){
 
 				try{
 
+					try{
+						File file = new File("data/" + "food" + ".txt");
+						BufferedReader br = new BufferedReader(new FileReader(file));
+
+						String str= null;
+						i=0;
+						while((str = br.readLine()) != null){
+							Dedede[i] = str;
+							i = i +1;
+						}
+
+						br.close();
+
+					}catch(FileNotFoundException e){
+						System.out.println(e);
+					}catch(IOException e){
+						System.out.println(e);
+					}
+
+					Random lun = new Random();
+					int solar = lun.nextInt(i);
+
+
+					String fy = Dedede[solar] + "は" + Usiro;
+
+					twitter.updateStatus(fy);
+
+
+				}catch(TwitterException e){
+					System.err.println("ツイート失敗"+e.getMessage());
+				}
+
 				try{
-				       File file = new File("data/" + "food" + ".txt");
-				       BufferedReader br = new BufferedReader(new FileReader(file));
+					File file = new File("data/" + "Mercury" + ".txt");
 
-				       String str= null;
-				       i=0;
-				       while((str = br.readLine()) != null){
-				           Dedede[i] = str;
-				           i = i +1;
-				       }
-
-				       br.close();
-
-				  }catch(FileNotFoundException e){
-				        System.out.println(e);
-				  }catch(IOException e){
-				        System.out.println(e);
-				  }
-
-				Random lun = new Random();
-				int solar = lun.nextInt(i);
-
-
-				String fy = Dedede[solar] + "は" + Usiro;
-
-				twitter.updateStatus(fy);
-
-
-			}catch(TwitterException e){
-				System.err.println("ツイート失敗"+e.getMessage());
-			}
-
-				try{
-				      File file = new File("data/" + "Mercury" + ".txt");
-
-				      if (checkBeforeWritefile(file)){
-				        PrintWriter pwx = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+					if (checkBeforeWritefile(file)){
+						PrintWriter pwx = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 						pwx.println("未入力");
 						pwx.println("未入力");
 
-		        pwx.close();
-				      }else{
-				        System.out.println("ファイルに書き込めません");
-				      }
-				    }catch(IOException e){
-				      System.out.println(e);
-				    }
+						pwx.close();
+					}else{
+						System.out.println("ファイルに書き込めません");
+					}
+				}catch(IOException e){
+					System.out.println(e);
+				}
 
 				Mae = "未入力";
 				Usiro = "未入力";
@@ -216,12 +216,12 @@ public class ModeHaCo {
 					String fy = Mae + "は" + Usiro;
 
 					try{
-				       File file = new File("data/" + "Mercury" + ".txt");
-				       BufferedReader kr = new BufferedReader(new FileReader(file));
+						File file = new File("data/" + "Mercury" + ".txt");
+						BufferedReader kr = new BufferedReader(new FileReader(file));
 
-				       mmf = kr.readLine();
+						mmf = kr.readLine();
 
-				       kr.close();
+						kr.close();
 
 					}catch(FileNotFoundException e){
 						System.out.println(e);
@@ -240,23 +240,23 @@ public class ModeHaCo {
 
 
 					try{
-					       File file = new File("data/" + "Venus" + ".txt");
-					       BufferedReader kdr = new BufferedReader(new FileReader(file));
+						File file = new File("data/" + "Venus" + ".txt");
+						BufferedReader kdr = new BufferedReader(new FileReader(file));
 
-					       mmf = kdr.readLine();
+						mmf = kdr.readLine();
 
-					       kdr.close();
+						kdr.close();
 
-						}catch(FileNotFoundException e){
-							System.out.println(e);
-						}catch(IOException e){
-							System.out.println(e);
-						}
+					}catch(FileNotFoundException e){
+						System.out.println(e);
+					}catch(IOException e){
+						System.out.println(e);
+					}
 
-						if(!(mmf.equals("未入力")) && jissai<64){
-							fy = mmf+"けど"+fy;
+					if(!(mmf.equals("未入力")) && jissai<64){
+						fy = mmf+"けど"+fy;
 
-						}
+					}
 
 
 
@@ -271,7 +271,7 @@ public class ModeHaCo {
 					}
 
 
-						twitter.updateStatus(fy);
+					twitter.updateStatus(fy);
 
 					System.out.println("ツイートしたよ："+fy);
 
@@ -283,59 +283,59 @@ public class ModeHaCo {
 					td = 1;
 
 					try{
-					      File file = new File("data/" + "Mars" + ".txt");
+						File file = new File("data/" + "Mars" + ".txt");
 
-					      if (checkBeforeWritefile(file)){
-					        PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+						if (checkBeforeWritefile(file)){
+							PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 							pw.println("未入力");
 							pw.println("未入力");
 
-			        pw.close();
-					      }else{
-					        System.out.println("ファイルに書き込めません");
-					      }
-					    }catch(IOException e){
-					      System.out.println(e);
-					    }
+							pw.close();
+						}else{
+							System.out.println("ファイルに書き込めません");
+						}
+					}catch(IOException e){
+						System.out.println(e);
+					}
 
 
 					try{
-					      File file = new File("data/" + "Mercury" + ".txt");
+						File file = new File("data/" + "Mercury" + ".txt");
 
-					      if (checkBeforeWritefile(file)){
-					        PrintWriter pwx = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+						if (checkBeforeWritefile(file)){
+							PrintWriter pwx = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 							pwx.println("未入力");
 							pwx.println("未入力");
 
-			        pwx.close();
-					      }else{
-					        System.out.println("ファイルに書き込めません");
-					      }
-					    }catch(IOException e){
-					      System.out.println(e);
-					    }
+							pwx.close();
+						}else{
+							System.out.println("ファイルに書き込めません");
+						}
+					}catch(IOException e){
+						System.out.println(e);
+					}
 
 					try{
-					      File file = new File("data/" + "Venus" + ".txt");
+						File file = new File("data/" + "Venus" + ".txt");
 
-					      if (checkBeforeWritefile(file)){
-					        PrintWriter pwx = new PrintWriter(new BufferedWriter(new FileWriter(file)));
+						if (checkBeforeWritefile(file)){
+							PrintWriter pwx = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 
 
 							pwx.println("未入力");
 							pwx.println("未入力");
 
-			        pwx.close();
-					      }else{
-					        System.out.println("ファイルに書き込めません");
-					      }
-					    }catch(IOException e){
-					      System.out.println(e);
-					    }
+							pwx.close();
+						}else{
+							System.out.println("ファイルに書き込めません");
+						}
+					}catch(IOException e){
+						System.out.println(e);
+					}
 
 
 
@@ -351,19 +351,19 @@ public class ModeHaCo {
 
 
 
-}
+	}
 
 
 
-	  private static boolean checkBeforeWritefile(File file){
-		    if (file.exists()){
-		      if (file.isFile() && file.canWrite()){
-		        return true;
-		      }
-		    }
+	private static boolean checkBeforeWritefile(File file){
+		if (file.exists()){
+			if (file.isFile() && file.canWrite()){
+				return true;
+			}
+		}
 
-		    return false;
-		  }
+		return false;
+	}
 
 
 

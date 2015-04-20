@@ -22,30 +22,30 @@ public class Taiha {
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
 
-    	Random lun = new Random();
+		Random lun = new Random();
 		int solar = lun.nextInt(9);
 		String conn = "";
 
 		switch(solar){
 
 		case 0:conn = "轟沈？轟沈？";
-				break;
+		break;
 		case 1:conn = "エロ提督だ";
-				break;
+		break;
 		case 2:conn = "轟沈する前に解体";
-				break;
-		case 3:conn =  "2 4 11か？";
-				break;
+		break;
+		case 3:conn =  "2 4 11";
+		break;
 		case 4:conn = "たいはっはっはｗｗｗｗｗｗ";
-				break;
-		case 5:conn = "おに！悪魔！！ザコ";
-				break;
+		break;
+		case 5:conn = "バケツもったいないし解体しよう";
+		break;
 		case 6:conn = "ドッグ占拠";
-				break;
+		break;
 		case 7:conn = "轟沈";
-				break;
+		break;
 		case 8:conn = "ふらま大破知ってる！ 轟沈よね";
-				break;
+		break;
 
 
 		}

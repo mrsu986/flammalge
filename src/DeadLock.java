@@ -20,28 +20,28 @@ public class DeadLock {
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
-    	Random lune = new Random();
+		Random lune = new Random();
 		int kind = lune.nextInt(7);
 		String mes = "";
 
 		switch(kind){
 
 		case 0:mes = "呼んだ？( ◠‿◠ )";
-			break;
+		break;
 		case 1:mes = "バレないとでも思った？";
-			break;
+		break;
 		case 2:mes = "ﾊｧｰｲ♡";
-			break;
+		break;
 		case 3:mes = "チャオ";
-			break;
+		break;
 		case 4:mes = "遊ぼ♪";
-			break;
+		break;
 		case 5:mes = "ん？";
-			break;
+		break;
 		case 6:mes = "ふらまです";
-			break;
+		break;
 		case 7:mes = "どうも";
-			break;
+		break;
 
 
 		}

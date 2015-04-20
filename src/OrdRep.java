@@ -36,44 +36,44 @@ public class OrdRep {
 		if(mode<87){
 
 			try{
-			       File file = new File("data/" + "rewords" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+				File file = new File("data/" + "rewords" + ".txt");
+				BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       String str= null;
-			       i=0;
-			       while((str = br.readLine()) != null){
-			           Dedede[i] = str;
-			           i = i +1;
-			       }
+				String str= null;
+				i=0;
+				while((str = br.readLine()) != null){
+					Dedede[i] = str;
+					i = i +1;
+				}
 
-			       br.close();
+				br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+			}catch(FileNotFoundException e){
+				System.out.println(e);
+			}catch(IOException e){
+				System.out.println(e);
+			}
 
 		}else{
 
 			try{
-			       File file = new File("data/" + "yatagarasu" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+				File file = new File("data/" + "yatagarasu" + ".txt");
+				BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       String str= null;
-			       i=0;
-			       while((str = br.readLine()) != null){
-			           Dedede[i] = str;
-			           i = i +1;
-			       }
+				String str= null;
+				i=0;
+				while((str = br.readLine()) != null){
+					Dedede[i] = str;
+					i = i +1;
+				}
 
-			       br.close();
+				br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+			}catch(FileNotFoundException e){
+				System.out.println(e);
+			}catch(IOException e){
+				System.out.println(e);
+			}
 
 
 		}
@@ -87,11 +87,6 @@ public class OrdRep {
 		} catch(TwitterException e){
 			System.err.println("ツイート失敗"+e.getMessage());
 		}
-
-
-
-
-
 
 
 

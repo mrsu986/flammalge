@@ -15,6 +15,7 @@ public class GUOWeather {
 	int td = 0;
 
 	GUOWeather(){
+
 	}
 
 	GUOWeather(String base, long id, String name){
@@ -30,16 +31,9 @@ public class GUOWeather {
 
 		try {
 			URL u = new URL("http://www.tenki.jp/forecast/3/16/4410.html");
-			HttpURLConnection con = (HttpURLConnection) u.openConnection();// (1)
-			InputStreamReader isr = new InputStreamReader(con.getInputStream(), "UTF-8");// (1)
+			HttpURLConnection con = (HttpURLConnection) u.openConnection();
+			InputStreamReader isr = new InputStreamReader(con.getInputStream(), "UTF-8");
 
-			//URL u = new URL("https://www.sbisec.co.jp/ETGate");// (2)
-			//HttpsURLConnection con = (HttpsURLConnection) u.openConnection();// (2)
-			//InputStreamReader isr = new InputStreamReader(con.getInputStream(), "SJIS");// (2)
-
-			//URL u = new URL("https://www.monex.co.jp/Login/00000000/login/ipa �c (3)
-			//HttpsURLConnection con = (HttpsURLConnection) u.openConnection();// (3)
-			//InputStreamReader isr = new InputStreamReader(con.getInputStream(), "SJIS");// (3)
 
 			BufferedReader br = new BufferedReader(isr);
 

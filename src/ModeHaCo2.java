@@ -32,7 +32,7 @@ public class ModeHaCo2 {
 
 		int jissai = rnd.nextInt(192);
 
-   		Twitter twitter = new TwitterFactory().getInstance();
+		Twitter twitter = new TwitterFactory().getInstance();
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
@@ -40,44 +40,44 @@ public class ModeHaCo2 {
 
 		Mae = cutey.split("を")[0];
 
-			System.out.println("文章が「を」条件通過");
-			if(Mae.split("、").length>1){
-				Mae = Mae.split("、")[Mae.split("、").length-1];
+		System.out.println("文章が「を」条件通過");
+		if(Mae.split("、").length>1){
+			Mae = Mae.split("、")[Mae.split("、").length-1];
+		}
+
+
+		try{
+			File file = new File("data/" + "wo" + ".txt");
+
+			if (checkBeforeWritefile(file)){
+				FileWriter filewriter = new FileWriter(file, true);
+
+				filewriter.write(Mae);
+				filewriter.write("\r\n");
+				filewriter.close();
+			}else{
+				System.out.println("ファイルに書き込めません");
 			}
+		}catch(IOException e){
+			System.out.println(e);
+		}
 
 
-				try{
-				      File file = new File("data/" + "wo" + ".txt");
-
-				      if (checkBeforeWritefile(file)){
-				        FileWriter filewriter = new FileWriter(file, true);
-
-				        filewriter.write(Mae);
-				        filewriter.write("\r\n");
-				        filewriter.close();
-				      }else{
-				        System.out.println("ファイルに書き込めません");
-				      }
-				    }catch(IOException e){
-				      System.out.println(e);
-				    }
+	}
 
 
+
+
+
+	private static boolean checkBeforeWritefile(File file){
+		if (file.exists()){
+			if (file.isFile() && file.canWrite()){
+				return true;
 			}
+		}
 
-
-
-
-
-	  private static boolean checkBeforeWritefile(File file){
-		    if (file.exists()){
-		      if (file.isFile() && file.canWrite()){
-		        return true;
-		      }
-		    }
-
-		    return false;
-		  }
+		return false;
+	}
 
 
 

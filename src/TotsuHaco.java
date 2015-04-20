@@ -32,45 +32,45 @@ public class TotsuHaco {
 
 		Random lun = new Random();
 
-			try{
-			       File file = new File("data/" + "Haco1" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+		try{
+			File file = new File("data/" + "Haco1" + ".txt");
+			BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       String str= null;
-			       i=0;
-			       while((str = br.readLine()) != null){
-			           Dedede[i] = str;
-			           i = i +1;
-			       }
+			String str= null;
+			i=0;
+			while((str = br.readLine()) != null){
+				Dedede[i] = str;
+				i = i +1;
+			}
 
-			       br.close();
+			br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+		}catch(FileNotFoundException e){
+			System.out.println(e);
+		}catch(IOException e){
+			System.out.println(e);
+		}
 
-			int eclip = lun.nextInt(i);
+		int eclip = lun.nextInt(i);
 
-			try{
-			       File file = new File("data/" + "Haco2" + ".txt");
-			       BufferedReader br = new BufferedReader(new FileReader(file));
+		try{
+			File file = new File("data/" + "Haco2" + ".txt");
+			BufferedReader br = new BufferedReader(new FileReader(file));
 
-			       String str= null;
-			       i=0;
-			       while((str = br.readLine()) != null){
-			           Dedede2[i] = str;
-			           i = i +1;
-			       }
+			String str= null;
+			i=0;
+			while((str = br.readLine()) != null){
+				Dedede2[i] = str;
+				i = i +1;
+			}
 
-			       br.close();
+			br.close();
 
-			  }catch(FileNotFoundException e){
-			        System.out.println(e);
-			  }catch(IOException e){
-			        System.out.println(e);
-			  }
+		}catch(FileNotFoundException e){
+			System.out.println(e);
+		}catch(IOException e){
+			System.out.println(e);
+		}
 
 
 		int solar = lun.nextInt(i);

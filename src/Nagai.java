@@ -17,7 +17,7 @@ public class Nagai {
 
 	Nagai(long id,String user){
 
-   		Twitter twitter = new TwitterFactory().getInstance();
+		Twitter twitter = new TwitterFactory().getInstance();
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
@@ -25,26 +25,28 @@ public class Nagai {
 		int uuu = rnd.nextInt(3);
 
 
-			try{
-				if(uuu==0){
-					twitter.updateStatus(new StatusUpdate("@"+user+" 長い").inReplyToStatusId(id));
-				}
-				if(uuu==1){
-					twitter.updateStatus(new StatusUpdate("@"+user+" うるさい").inReplyToStatusId(id));
-				}
-				if(uuu==2){
-					twitter.updateStatus(new StatusUpdate("@"+user+" 静かにしましょう").inReplyToStatusId(id));
-				}
-
-				System.out.println("返信：長い");
-				td = 1;
-			} catch(TwitterException e){
-				System.err.println("ツイート失敗"+e.getMessage());
+		try{
+			if(uuu==0){
+				twitter.updateStatus(new StatusUpdate("@"+user+" 長い").inReplyToStatusId(id));
+			}
+			if(uuu==1){
+				twitter.updateStatus(new StatusUpdate("@"+user+" うるさい").inReplyToStatusId(id));
+			}
+			if(uuu==2){
+				twitter.updateStatus(new StatusUpdate("@"+user+" 静かにしましょう").inReplyToStatusId(id));
 			}
 
+			System.out.println("返信：長い");
+			td = 1;
+		} catch(TwitterException e){
+			System.err.println("ツイート失敗"+e.getMessage());
 		}
 
+	}
 
+
+
+	//同じこと何回も言わなくてもわかるよ
 
 
 

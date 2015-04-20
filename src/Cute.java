@@ -18,7 +18,7 @@ public class Cute {
 
 	Cute(String cutey, int cutemoji){
 
-   	Twitter twitter = new TwitterFactory().getInstance();
+		Twitter twitter = new TwitterFactory().getInstance();
 		twitter.setOAuthConsumer(Keys.consumerKey, Keys.consumerSecret);
 		twitter.setOAuthAccessToken(new AccessToken(Keys.accessToken,Keys.accessTokenSecret));
 
@@ -81,20 +81,20 @@ public class Cute {
 				System.out.println("！ツイートしたよ："+cutey + "かわいい");
 				td = 1;
 				try{
-				      File file = new File("data/" + "cutes" + ".txt");
+					File file = new File("data/" + "cutes" + ".txt");
 
-				      if (checkBeforeWritefile(file)){
-				        FileWriter filewriter = new FileWriter(file, true);
+					if (checkBeforeWritefile(file)){
+						FileWriter filewriter = new FileWriter(file, true);
 
-				        filewriter.write(cutey);
-				        filewriter.write("\r\n");
-				        filewriter.close();
-				      }else{
-				        System.out.println("ファイルに書き込めません");
-				      }
-				    }catch(IOException e){
-				      System.out.println(e);
-				    }
+						filewriter.write(cutey);
+						filewriter.write("\r\n");
+						filewriter.close();
+					}else{
+						System.out.println("ファイルに書き込めません");
+					}
+				}catch(IOException e){
+					System.out.println(e);
+				}
 
 			}catch(TwitterException e){
 				System.err.println("ツイート失敗"+e.getMessage());
@@ -105,15 +105,15 @@ public class Cute {
 
 
 
-	  private static boolean checkBeforeWritefile(File file){
-		    if (file.exists()){
-		      if (file.isFile() && file.canWrite()){
-		        return true;
-		      }
-		    }
+	private static boolean checkBeforeWritefile(File file){
+		if (file.exists()){
+			if (file.isFile() && file.canWrite()){
+				return true;
+			}
+		}
 
-		    return false;
-		  }
+		return false;
+	}
 
 
 
